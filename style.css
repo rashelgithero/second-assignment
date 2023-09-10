@@ -1,0 +1,61 @@
+body{
+    font-family: Work Sans;
+}
+
+header{
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding-bottom: 5px;
+}
+nav div, h2, h4{
+    display: inline;
+}
+#logo{
+    display: flex;
+    align-items: start;
+    gap: 15px;
+}
+#logo span{
+    font-size: 45px;
+    color: #FF42A5
+}
+#logo h2{
+    margin: 0;
+    color: #0B0223;
+    font-size: 45px;
+    font-weight: 700;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 100px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+#navbar a{
+    text-decoration: none;
+    color: #3C354F;
+
+}
+.following{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px;
+}
+.following h4{
+    color: #3C354F;
+    font-size: 20px;
+    font-weight: 500;
+
+}
+.following img{
+    width: 20px;
+    height: 13px;
+}
+.following a{
+    margin-left: 5px;
+    cursor: pointer;
+}
