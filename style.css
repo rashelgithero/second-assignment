@@ -64,25 +64,18 @@ nav{
     cursor: pointer;
 }
 .gamer{
-    display: flex;
-    
-}
-.gamer{
     background: url(gamer/images/Group\ 14.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
     align-items: center;
-    justify-content: center;
-    
 }
 .gamePlay{
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: center ;
 }
 .gamePlay h1 {
     font-size: 70px;
@@ -119,7 +112,7 @@ button{
     outline: none;
     padding: 15px 30px;
     color: #FFF;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: 600;
     border-radius: 48px;
     cursor: pointer;
@@ -142,7 +135,6 @@ button{
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 #about-image{
     width: 65%;
@@ -369,5 +361,105 @@ button{
 }
 .social-list a{
     padding:20px;
+}
+@media screen and (max-width: 525px){
+    section{
+        padding: 0 50px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    #navbar{
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .gamer{
+        flex-direction: column-reverse;
+        background: none;
+        margin: 0 50px;
+        
+    }
+    #gamePlayImg{
+        justify-content: center;
+        width: 100%;
+    }
+    .gamePlay{
+        width: 100%;
+        background: url(gamer/images/Group\ 14.png);
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        padding: 50px;
+    }
+    .gamePlay h1{
+        font-size: 30px;
+    }
+    .gamePlay h2 {
+        font-size: 20px;
+    }
+    .gamePlay ul{
+        margin: 10px 0 ;
+        padding: 0;
+        
+    }
+    .gamePlay ul li{
+        font-size: 13px;
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 10px;
+    }
+    .about-gamer{
+        flex-direction: column;
+    }
+    #about-image{
+        width: 100%;
+    }
+    #about-details{
+        text-align: center;
+        width: 80%;
+    }
+    #about-details h3{
+        font-size: 30px;
+    } 
+    .online-game h3, .online-game span, #game-playDetails h3{
+        font-size: 25px;
+    }
+    .online-game p{
+        font-size: 10px;
+    }
+    .online-videos{
+        flex-direction: column;
+    }
+    .online-videos div{
+        height: auto;
+        width: 70%;
+    }
+    .game-play{
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+    #game-playDetails{
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+    #game-playImg{
+        width: 100%;
+        margin-top: 20px;
+    }
+    #img1{  
+        width: 75%;
+       
+    }
+    #img2{
+        width: 40%;
+        left: 0;
+        top: 160px;
+
+    }
 }
 
