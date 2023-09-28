@@ -185,13 +185,10 @@ button{
 }
 .online-videos{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 50px;
 }
 .videos-area{
     width: 25%;
-    height: 450px;
+    height: 400px;
     margin: 10px;
     text-align: center;
     
@@ -203,10 +200,12 @@ button{
 }
 .online-videos img{
     width: 100%;
-    height: 400px;
+    height: 100%;
 }
 .online-img{
     position: relative;
+    width: 100%;
+    height: 85%;
     &:hover #hover-effect{
         visibility: visible;
         opacity: 0.7;
@@ -219,7 +218,7 @@ button{
     left: 0;
     background-color: black;
     width: 100%;
-    height: 400px;
+    height: 100%;
     margin: 0;
     border-radius: 10px;
     visibility: hidden;
@@ -491,6 +490,7 @@ button{
     .online-videos{
         flex-direction: column;
         margin-bottom: 0;
+        align-items: center;
     }
     .videos-area{
         width: 80%;
