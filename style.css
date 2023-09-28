@@ -248,7 +248,7 @@ button{
 }
 .game-play{
     display: flex;
-    min-height: 600px;
+    min-height: 500px;
     margin-bottom: 50px;
 }
 #game-playDetails{
@@ -287,7 +287,7 @@ button{
 #img2{
     position: absolute;
     width: 25%;
-    left: 250px;
+    left: 200px;
     bottom: 0;
     z-index: 3;
 }
