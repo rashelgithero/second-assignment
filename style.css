@@ -187,12 +187,14 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 50px;
 }
-.online-videos div{
-    width: 240px;
-    height: 400px;
+.videos-area{
+    width: 25%;
+    height: 450px;
     margin: 10px;
     text-align: center;
+    
 }
 .online-videos div p , #game-playDetails p{
     margin: 10px;
@@ -201,6 +203,44 @@ button{
 }
 .online-videos img{
     width: 100%;
+    height: 400px;
+}
+.online-img{
+    position: relative;
+    &:hover #hover-effect{
+        visibility: visible;
+        opacity: 0.7;
+        cursor: pointer;
+    }
+}
+#hover-effect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 100%;
+    height: 400px;
+    margin: 0;
+    border-radius: 10px;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#hover-effect h3{
+    background: var(--Linear, linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+#hover-effect img{
+    width: 30px;
+    height: 30px;
+    
 }
 .online-game-play{
     display: flex;
@@ -209,7 +249,8 @@ button{
 }
 .game-play{
     display: flex;
-    min-height: 550px;
+    min-height: 600px;
+    margin-bottom: 50px;
 }
 #game-playDetails{
     width: 30%;
@@ -218,6 +259,9 @@ button{
     text-align: right;
     justify-content: center;
     align-items: flex-end;
+}
+#game-playDetails p{
+    margin-left: 100px;
 }
 #game-playDetails h3{
     font-size: 45px;
@@ -235,7 +279,7 @@ button{
     
 }
 #img1{
-    width: 60%;
+    width: 55%;
     position: absolute;
     margin: auto;
     right: 30px;
@@ -243,8 +287,8 @@ button{
 }
 #img2{
     position: absolute;
-    width: 30%;
-    left: 140px;
+    width: 25%;
+    left: 250px;
     bottom: 0;
     z-index: 3;
 }
@@ -297,28 +341,41 @@ button{
 
 }
 .games-types{
-    display: flex;
-    flex-direction: column;
     margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
 }
 .games-types h5{
     margin-left: 5px;
 }
-#first-row div, #second-row div{
-    display: flex;
-    justify-content: center;
-    margin: 20px 10px;
+.games-types #first-row div, .games-types #second-row div{
+    padding: 10px 10px;
+    width: 16%;
+    margin: 30px 10px;
+    height: 50px;
     border-radius: 50px;
-    background: #FFF;
-    width: 100%;
+    border: 1px solid white;
+    background-color: white;
+    display: flex;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+
+
+    &:hover{
+        color: red;
+        border: 1px solid red;
+    }
+}
+.games-types img{
+    width: 30%;
 }
 #first-row{
     display: flex;
-}
-#second-row{
-    display: flex;
-    padding: 0 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .footer{
     background: #0B0223;
@@ -337,8 +394,6 @@ button{
     display: flex;
     color: #FFF;
     font-size: 15px;
-    font-weight: 600;
-
 }
 .condition-list{
     display: flex;
@@ -362,7 +417,7 @@ button{
 .social-list a{
     padding:20px;
 }
-@media screen and (max-width: 525px){
+@media screen and (max-width: 500px){
     section{
         padding: 0 50px;
     }
@@ -427,29 +482,54 @@ button{
     .online-game h3, .online-game span, #game-playDetails h3{
         font-size: 25px;
     }
+    .online-game{
+        margin-bottom: 20px;
+    }
     .online-game p{
         font-size: 10px;
     }
     .online-videos{
         flex-direction: column;
+        margin-bottom: 0;
     }
-    .online-videos div{
+    .videos-area{
+        width: 80%;
         height: auto;
-        width: 70%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .online-img{
+        width: 100%;
+        height: auto;
+    }
+    .online-videos img{
+        width: 100%;
+        height: auto;
+    }
+    #hover-effect{
+        height: 100%;
     }
     .game-play{
         flex-direction: column;
         align-items: center;
         margin: 20px 0;
+        min-height: 550px;
     }
     #game-playDetails{
         width: 80%;
         text-align: center;
         align-items: center;
+        margin-bottom: 10px;
+    }
+    #game-playDetails p{
+        margin-left: 0;
+        font-size: 16px ;
     }
     #game-playImg{
         width: 100%;
-        margin-top: 20px;
+        
     }
     #img1{  
         width: 75%;
@@ -458,8 +538,74 @@ button{
     #img2{
         width: 40%;
         left: 0;
-        top: 160px;
+        top: 150px;
 
     }
+    .career{
+        flex-direction: column;
+        align-items: start;
+    }
+    .career-details{
+        width: 80%;
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .career-details p{
+        font-size: 10px;
+    }
+    #career-list li{
+        font-size: 10px;
+    }
+    .career-img{
+        width: 90%;
+    }
+    #first-row{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: 10px;
+    }
+    .games-types img{
+        width: 20%;
+    }   
+    .games-types {
+        margin-top: 0;
+    }
+    .games-types #first-row div{
+        width: 100%;
+        height: auto;
+        font-size: 9px;
+        display: flex;
+        margin: 10px 0;
+        padding: 0px 0;
+    }
+    .footer #logo{
+        margin: 70px 0 30px 0 ;
+    }
+    .service-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .service-list li{
+        padding: 10px 10px;
+    }
+    .social-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 20px 20px ;
+    }
+    .condition-list{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .condition-list li{
+        padding: 10px 20px;
+    }
+    .footer small{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
 }
 
